@@ -14,9 +14,6 @@ function scale_canvas(canvas) {
 
 scale_canvas(canvas)
 
-// ctx.fillStyle = "black";
-// ctx.fillRect(0, 0, canvas.width, canvas.height);
-
 // The draw() function. Calls itself repeatedly.
 function draw() {
     x = (x + x_speed);
@@ -31,7 +28,6 @@ function draw() {
     ctx.fillStyle = '#eee';
     ctx.fillRect(x, y, 20, 20);
 
-    console.log(x, y);
 
     // Call draw again
     window.requestAnimationFrame(draw);
